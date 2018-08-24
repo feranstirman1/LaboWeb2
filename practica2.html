@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Curriculum Vitae</h1>
+    
+    <section>
+        <article>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <label for="dui">DUI:</label><input type="text" rquired pattern="[0-9]{8}-[0-9]{1}" title="ingrese un dui correcto">
+                    <label for="name">Name:</label><input type="text" placeholder="First Name" required>
+                    <label for="lastname">Last Name: </label><input type="text" placeholder="Last Name" required>
+                    <label for="gender">Gender:</label><label for=""><input type="radio" value="M" name="genero" >M</label >
+                    <label for=""><input type="radio" value="F" name="genero">F</label>
+                    <br>
+                    <label for="contactnum">Contact Number:</label><input type="text" required pattern="[0-9]{4}-[0-9]{4}">
+                    <label for="birth">Birthdate: </label><input type="date" required min="2000-01-01" max="2018-12-31">
+                    <label for="status">Civil Status:</label><select name="status" id="1"><option value="Soltero">Soltero</option><option value="Casado">Casado</option></select>
+                    <label for="image">Image: </label><input type="file" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <textarea name="workexperience" id="xp" cols="250" rows="10">Experience</textarea>
+                </fieldset>
+
+                <fieldset>
+                        <legend>Academic Training</legend>
+                        <textarea name="training" id="training" cols="250" rows="10">Academic Training</textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Further Training</legend>
+                    <fieldset>
+                        <legend>Prgramming Languages</legend>
+                        <label for=""><input type="radio" value="Java">Java</label>
+                        <label for=""><input type="radio" value="C#">c#</label>
+                        <label for=""><input type="radio" value="Python">Python</label>
+                        <label for=""><input type="radio" value="C++">c++</label>
+                        <label for=""><input type="radio" value="Ruby">Ruby</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Web Technologies</legend>
+                        <label for=""><input type="checkbox" value="html5">HTML5</label>
+                        <label for=""><input type="checkbox" value="css">CSS/CSS3</label>
+                        <label for=""><input type="checkbox" value="materialize">materialize Css</label>
+                        <label for=""><input type="checkbox" value="javascript">Javascript</label>
+                        <label for=""><input type="checkbox" value="node">Node.jss</label>
+                        <label for=""><input type="checkbox" value="mvc">Spring MVC</label>
+                    </fieldset>
+                </fieldset>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Cancel">
+            </form>
+        </article>
+    </section>
+    
+    
+</body>
+</html>
